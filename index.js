@@ -15,7 +15,6 @@ function displayResults(responseJson) {
     alert('That breed wasn\'t found, please try another.');
   } else {
     //replace the existing image with the new one
-    $('.results').html(`<h2>Look at this dog!</h2>`);
 
     $('.results').append(
       `<img src="${responseJson.message}" class="results-img" >`);
