@@ -13,14 +13,21 @@
 
 <body>
   <div class="container">
-    <h1>Dog API: Show me breed</h1>
-
-    <form>
-      <input type="text" name="breedOfDog" placeholder="Enter a breed" required />
-      <input type="submit" value="Get a dog pic!">
-    </form>
+    <h1>Dog API: A Simple Example</h1>
+    <section class="user-input">
+      <form>
+        <label for="How many Dog pics?">How Many Dog pics?</label>
+        <input class="numberPics" type="text" name="How many Dog pics?" value="3">
+        <label for="What breed?">What breed?</label>
+        <input class="breed" type="text" name="What breed?" value="hound">
+        <input type="submit" value="Get dog pics!">
+      </form>
+      </br>
+      <button id="clear-results">Clear Results</button>
+    </section>
     <section class="results hidden">
       <h2>Look at this dog!</h2>
+      <img class="results-img" alt="placeholder">
     </section>
   </div>
   <script src="index.js"></script>
